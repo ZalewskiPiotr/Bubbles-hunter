@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://g6a06if7opn"]
+
+[ext_resource type="Script" path="res://scripts/bubble_killer.gd" id="1_6tl5n"]
+[ext_resource type="Texture2D" uid="uid://bb47cwinw8x1" path="res://assets/bubbles/BubbleKiller.png" id="2_01bwm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yrcrp"]
+radius = 17.0
+
+[node name="BubbleKiller" type="CharacterBody2D" groups=["Bubbles"]]
+position = Vector2(35, 36)
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_6tl5n")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_01bwm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_yrcrp")
