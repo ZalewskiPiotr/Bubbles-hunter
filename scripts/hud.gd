@@ -11,3 +11,7 @@ func _ready():
 func add_point():
 	points += 1
 	score_label.text = "SCORE: " + str(points)
+
+
+func _on_exit_game_pressed():
+	get_tree().quit()
