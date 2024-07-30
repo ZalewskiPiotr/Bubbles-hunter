@@ -63,7 +63,7 @@ func death():
 	hit.emit()
 	get_tree().call_group("Bubbles", "queue_free")
 	await get_tree().create_timer(1.5).timeout
-	get_tree().paused = true
+	#get_tree().paused = true
 	hide()
 	print("after pause")
 	#queue_free() -> tu raczej trzeba dać hide() lub zostawić animację na leżącym graczu
