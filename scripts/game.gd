@@ -16,6 +16,8 @@ extends Node2D
 @export var bubble_scene : PackedScene # w inspektorze trzeba załadować odpowiednią scenę lub napisać tak w kodzie var bubble_scene = preload("res://scenes/bubble.tscn")
 @export var killer_bubble_scene : PackedScene
 @onready var timer_bubble_generator = %BubbleGenerator
+@onready var hud = $HUD
+
 
 var max_bubbles_quantity_spawn : int = 5 # MAksymalna ilość baniek, które mogą być utworzone za jednym razem
 
@@ -72,5 +74,6 @@ func create_bubble():
 	
 func game_over():
 	timer_bubble_generator.stop()
+	hud.game_over()
 	print("game over")
 	# TODO: dodać jeszcze wyświetlanie planszy końcowej (game over, punkty, button next game, author, version, home page link)
