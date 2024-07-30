@@ -6,11 +6,11 @@
 script = ExtResource("1_r5qha")
 
 [node name="Score" type="Label" parent="."]
-offset_left = 8.0
-offset_top = 2.0
-offset_right = 133.0
-offset_bottom = 25.0
-text = "SCORE: "
+offset_left = 9.0
+offset_top = 3.0
+offset_right = 134.0
+offset_bottom = 26.0
+text = "SCORE: 0 "
 
 [node name="EndGameScore" type="RichTextLabel" parent="."]
 anchors_preset = 8
@@ -18,12 +18,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -143.0
+offset_left = -86.0
 offset_top = -229.0
-offset_right = 166.0
-offset_bottom = -189.0
+offset_right = 194.0
+offset_bottom = -163.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 36
 text = "YOUR SCORE: "
 
 [node name="RestartGame" type="Button" parent="."]
@@ -40,4 +41,5 @@ offset_right = 851.0
 offset_bottom = 294.0
 text = "EXIT"
 
+[connection signal="pressed" from="RestartGame" to="." method="_on_restart_game_pressed"]
 [connection signal="pressed" from="ExitGame" to="." method="_on_exit_game_pressed"]
