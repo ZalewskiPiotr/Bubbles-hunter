@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://be11rfwmagx5c"]
+
+[ext_resource type="StyleBox" uid="uid://dhf7esya2li5t" path="res://themes/my_style_box_flat.tres" id="1_w3d4u"]
+
+[resource]
+LinkButton/colors/font_color = Color(0, 0.87451, 0.87451, 1)
+Panel/styles/panel = ExtResource("1_w3d4u")
