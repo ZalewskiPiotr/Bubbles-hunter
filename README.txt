@@ -15,6 +15,7 @@ CZAS PRACY
 - 26.07.2024: 6h 13m
 - 27.07.2024: 3h 18m
 - 28.07.2024: 1h 40m
+- 31.07.2024: 3h 10m
 
 WYMAGANIA
 - OK - postać gracza może poruszać się w każdym kierunku
@@ -29,19 +30,19 @@ WYMAGANIA
 - OK - są specjalne bąbelki, które powodują że po ich dotknięciu postać gracza ginie i gra się kończy
 - OK - postać gracza zbiera bąbelki, poprzez jego dotknięcie
 - OK - za każdy bąbelek jest przyznawany jeden punkt
+- OK - po zakończeniu gry:
+	- OK - wyświetlane są punkty gracza
+	- OK - wyświetlany jest przycisk pozwalający rozpocząć grę od nowa
+	- OK - wyświetlany jest przycisk pozwalający wyjść z gry
+	- OK - HUD robimy jako CanvasLayer: https://www.youtube.com/watch?v=Xq9AyhX8HUc
+- OK zrób coś z tą różową bańką bo jest tragiczna
+- OK - dopisz wersję gry
+- OK - dopisz autora gry
+- OK - dopisz link do strony na GitHub
+- OK - dodaj info o assetach, skąd je masz
 - zakończenie gry jest tragiczne. Trzeba coś z tym zrobić, żeby tam się nic nie wykonywło. Pauza jest chyba kiepskim pomysłem
-- po zakończeniu gry:
-	- wyświetlane są punkty gracza
-	- wyświetlany jest przycisk pozwalający rozpocząć grę od nowa
-	- wyświetlany jest przycisk pozwalający wyjść z gry
-	- HUD robimy jako CanvasLayer: https://www.youtube.com/watch?v=Xq9AyhX8HUc
-- zrób coś z tą różową bańką bo jest tragiczna
-- dopisz wersję gry
-- dopisz autora gry
-- dopisz link do strony na GitHub
 - balans gry
 - coś się czasem dzieje że zderzam się z bańką a ona dalej istnieje i chyba w tym momencie przybywa mi dużo punktów
-- dodaj info o assetach, skąd je masz
 DODATKOWE WYMAGANA
 - pokaż FPS-y (Engine.target_fps)
 - zrób animację bańki w momencie jak pęka
