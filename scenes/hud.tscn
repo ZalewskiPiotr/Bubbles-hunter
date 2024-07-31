@@ -1,18 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpg4nlcimqbum"]
+[gd_scene load_steps=3 format=3 uid="uid://bpg4nlcimqbum"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_r5qha"]
+[ext_resource type="Theme" uid="uid://be11rfwmagx5c" path="res://themes/me_theme.tres" id="2_g8jjj"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_r5qha")
 
-[node name="Score" type="Label" parent="."]
+[node name="Labels" type="Node" parent="."]
+
+[node name="Score" type="Label" parent="Labels"]
 offset_left = 9.0
 offset_top = 3.0
 offset_right = 134.0
 offset_bottom = 26.0
 text = "SCORE: 0 "
 
-[node name="EndGameScore" type="RichTextLabel" parent="."]
+[node name="EndGameScore" type="RichTextLabel" parent="Labels"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -40,6 +43,100 @@ offset_top = 215.0
 offset_right = 851.0
 offset_bottom = 294.0
 text = "EXIT"
+
+[node name="GameAssets" type="Panel" parent="."]
+offset_left = 640.0
+offset_top = 504.0
+offset_right = 1134.0
+offset_bottom = 637.0
+theme = ExtResource("2_g8jjj")
+
+[node name="Label" type="Label" parent="GameAssets"]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 5.0
+offset_right = 295.0
+offset_bottom = 28.0
+text = "GAME ASSETS"
+
+[node name="Label2" type="Label" parent="GameAssets"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 48.0
+offset_right = 130.0
+offset_bottom = 71.0
+text = "Necromancer: "
+
+[node name="Label3" type="Label" parent="GameAssets"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 80.0
+offset_right = 127.0
+offset_bottom = 103.0
+text = "Bubbles: "
+
+[node name="LinkButton" type="LinkButton" parent="GameAssets"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 48.0
+offset_right = 487.0
+offset_bottom = 80.0
+text = "https://creativekind.itch.io/necromancer-free"
+uri = "https://creativekind.itch.io/necromancer-free"
+
+[node name="LinkButton2" type="LinkButton" parent="GameAssets"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 80.0
+offset_right = 487.0
+offset_bottom = 112.0
+text = "https://cassala.itch.io/bubble-sprites"
+uri = "https://cassala.itch.io/bubble-sprites"
+
+[node name="GameInfo" type="Panel" parent="."]
+offset_left = 24.0
+offset_top = 504.0
+offset_right = 232.0
+offset_bottom = 576.0
+theme = ExtResource("2_g8jjj")
+
+[node name="Author" type="Label" parent="GameInfo"]
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 151.0
+offset_bottom = 31.0
+text = "Author: PiotrZET"
+
+[node name="Version" type="Label" parent="GameInfo"]
+offset_left = 24.0
+offset_top = 40.0
+offset_right = 176.0
+offset_bottom = 63.0
+text = "Game version: 1.0.0"
+
+[node name="GitHub" type="Panel" parent="."]
+offset_left = 24.0
+offset_top = 592.0
+offset_right = 576.0
+offset_bottom = 632.0
+theme = ExtResource("2_g8jjj")
+
+[node name="Label" type="Label" parent="GitHub"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 112.0
+offset_bottom = 31.0
+text = "GitHub link: "
+
+[node name="LinkButton" type="LinkButton" parent="GitHub"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 8.0
+offset_right = 531.0
+offset_bottom = 32.0
+text = "https://github.com/ZalewskiPiotr/Bubbles-hunter/wiki"
+uri = "https://github.com/ZalewskiPiotr/Bubbles-hunter/wiki"
 
 [connection signal="pressed" from="RestartGame" to="." method="_on_restart_game_pressed"]
 [connection signal="pressed" from="ExitGame" to="." method="_on_exit_game_pressed"]
