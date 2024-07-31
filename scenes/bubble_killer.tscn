@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://g6a06if7opn"]
 
 [ext_resource type="Script" path="res://scripts/bubble_killer.gd" id="1_6tl5n"]
-[ext_resource type="Texture2D" uid="uid://bb47cwinw8x1" path="res://assets/bubbles/BubbleKiller.png" id="2_01bwm"]
+[ext_resource type="Texture2D" uid="uid://b0grcf64e7p8k" path="res://assets/bubbles/Coloured/32x32/bubble_4.png" id="2_ukkfc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yrcrp"]
-radius = 17.0
+radius = 15.0
 
 [node name="BubbleKiller" type="CharacterBody2D" groups=["Bubbles"]]
 position = Vector2(35, 36)
@@ -14,9 +14,9 @@ script = ExtResource("1_6tl5n")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.03, 0.03)
-texture = ExtResource("2_01bwm")
+modulate = Color(0.773633, 0, 0.0213861, 1)
+texture = ExtResource("2_ukkfc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+visible = false
 shape = SubResource("CircleShape2D_yrcrp")
