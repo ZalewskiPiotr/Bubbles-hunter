@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3 uid="uid://4kubqbr0tx1l"]
+
+[ext_resource type="AudioStream" uid="uid://by4gvam1f20tk" path="res://assets/music/8bit-Battle01.mp3" id="1_hmctl"]
+[ext_resource type="AudioStream" uid="uid://bsbgmmwg565gs" path="res://assets/music/Battle-Conflict.mp3" id="2_xg700"]
+[ext_resource type="AudioStream" uid="uid://bm1o6j18pawqg" path="res://assets/music/Battle-Dawn.mp3" id="3_4p8uh"]
+[ext_resource type="AudioStream" uid="uid://biyyiatd5pb4n" path="res://assets/music/Battle-rapier.mp3" id="4_qevxt"]
+[ext_resource type="AudioStream" uid="uid://3xppny2k3j1w" path="res://assets/music/Battle-SilverMoon.mp3" id="5_7nr1p"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sy7qk"]
+streams_count = 5
+stream_0/stream = ExtResource("1_hmctl")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_xg700")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_4p8uh")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_qevxt")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_7nr1p")
+stream_4/weight = 1.0
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamRandomizer_sy7qk")
+autoplay = true

@@ -45,53 +45,73 @@ offset_bottom = 294.0
 text = "EXIT"
 
 [node name="GameAssets" type="Panel" parent="."]
-offset_left = 640.0
-offset_top = 504.0
-offset_right = 1134.0
-offset_bottom = 637.0
+offset_left = 792.0
+offset_top = 496.0
+offset_right = 1112.0
+offset_bottom = 629.0
 theme = ExtResource("2_g8jjj")
 
 [node name="Label" type="Label" parent="GameAssets"]
 layout_mode = 0
-offset_left = 189.0
-offset_top = 5.0
-offset_right = 295.0
-offset_bottom = 28.0
+offset_left = 112.0
+offset_top = 8.0
+offset_right = 218.0
+offset_bottom = 31.0
 text = "GAME ASSETS"
 
 [node name="Label2" type="Label" parent="GameAssets"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 48.0
-offset_right = 130.0
-offset_bottom = 71.0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 128.0
+offset_bottom = 63.0
 text = "Necromancer: "
+horizontal_alignment = 2
 
 [node name="Label3" type="Label" parent="GameAssets"]
 layout_mode = 0
-offset_left = 56.0
-offset_top = 80.0
-offset_right = 127.0
-offset_bottom = 103.0
+offset_left = 8.0
+offset_top = 72.0
+offset_right = 128.0
+offset_bottom = 95.0
 text = "Bubbles: "
+horizontal_alignment = 2
+
+[node name="Label4" type="Label" parent="GameAssets"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 104.0
+offset_right = 128.0
+offset_bottom = 127.0
+text = "Music: "
+horizontal_alignment = 2
 
 [node name="LinkButton" type="LinkButton" parent="GameAssets"]
 layout_mode = 0
 offset_left = 136.0
-offset_top = 48.0
-offset_right = 487.0
-offset_bottom = 80.0
-text = "https://creativekind.itch.io/necromancer-free"
+offset_top = 40.0
+offset_right = 320.0
+offset_bottom = 64.0
+text = "creativekind.itch.io"
 uri = "https://creativekind.itch.io/necromancer-free"
 
 [node name="LinkButton2" type="LinkButton" parent="GameAssets"]
 layout_mode = 0
 offset_left = 136.0
-offset_top = 80.0
-offset_right = 487.0
-offset_bottom = 112.0
-text = "https://cassala.itch.io/bubble-sprites"
+offset_top = 72.0
+offset_right = 320.0
+offset_bottom = 96.0
+text = "cassala.itch.io"
 uri = "https://cassala.itch.io/bubble-sprites"
+
+[node name="LinkButton3" type="LinkButton" parent="GameAssets"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 104.0
+offset_right = 320.0
+offset_bottom = 128.0
+text = "youfulca.itch.io"
+uri = "https://youfulca.itch.io/legendary-jrpg-battle-music-pack"
 
 [node name="GameInfo" type="Panel" parent="."]
 offset_left = 24.0
@@ -119,7 +139,7 @@ text = "Game version: 1.0.0"
 [node name="GitHub" type="Panel" parent="."]
 offset_left = 24.0
 offset_top = 592.0
-offset_right = 576.0
+offset_right = 368.0
 offset_bottom = 632.0
 theme = ExtResource("2_g8jjj")
 
@@ -135,9 +155,9 @@ text = "GitHub link: "
 layout_mode = 0
 offset_left = 112.0
 offset_top = 8.0
-offset_right = 531.0
+offset_right = 336.0
 offset_bottom = 32.0
-text = "https://github.com/ZalewskiPiotr/Bubbles-hunter/wiki"
+text = "github.com/Bubbles hunter"
 uri = "https://github.com/ZalewskiPiotr/Bubbles-hunter/wiki"
 
 [connection signal="pressed" from="RestartGame" to="." method="_on_restart_game_pressed"]
