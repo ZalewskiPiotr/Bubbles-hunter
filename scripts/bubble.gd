@@ -18,6 +18,7 @@ func _exit_tree():
 	GlobalEvents.OnScoreBubbleDelete.emit()
 
 func _ready():
+	print("bubble->_ready(): tworzę bańkę score")
 	new_velocity_vector()
 	new_speed()
 	new_texture()
