@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cufa3xa83wcfr"]
+
+[ext_resource type="Script" path="res://scripts/sfx.gd" id="1_p3omf"]
+[ext_resource type="AudioStream" uid="uid://cdfco560b6u7l" path="res://assets/sfx/BubbleScore.wav" id="2_7b7p8"]
+[ext_resource type="AudioStream" uid="uid://b5su2xlbpw5ud" path="res://assets/sfx/BubbleKiller.wav" id="3_jy7dy"]
+[ext_resource type="AudioStream" uid="uid://crmb42lagnnxa" path="res://assets/sfx/death.wav" id="4_ji0mq"]
+
+[node name="SFX" type="Node"]
+script = ExtResource("1_p3omf")
+
+[node name="BubbleScore" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7b7p8")
+
+[node name="BubbleKiller" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jy7dy")
+
+[node name="PlayerDeath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ji0mq")

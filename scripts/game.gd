@@ -17,6 +17,7 @@ extends Node2D
 @export var killer_bubble_scene : PackedScene
 @onready var timer_bubble_generator = %BubbleGenerator
 @onready var hud = $HUD
+@onready var sfx = $SFX
 
 
 var max_bubbles_quantity_spawn : int = 5 # MAksymalna ilość baniek, które mogą być utworzone za jednym razem
@@ -73,6 +74,7 @@ func create_bubble():
 	add_child(new_ball)
 	
 func game_over():
+	sfx.play_player_death()
 	timer_bubble_generator.stop()
 	hud.game_over()
 	print("game over")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dax5a3io0acwh"]
+[gd_scene load_steps=9 format=3 uid="uid://dax5a3io0acwh"]
 
 [ext_resource type="PackedScene" uid="uid://2r12y24514hg" path="res://scenes/player.tscn" id="1_1gt0s"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_ylqcf"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://g6a06if7opn" path="res://scenes/bubble_killer.tscn" id="4_1lcrx"]
 [ext_resource type="PackedScene" uid="uid://bpg4nlcimqbum" path="res://scenes/hud.tscn" id="5_bce1s"]
 [ext_resource type="PackedScene" uid="uid://4kubqbr0tx1l" path="res://scenes/music.tscn" id="6_mitj6"]
+[ext_resource type="PackedScene" uid="uid://cufa3xa83wcfr" path="res://scenes/sfx.tscn" id="7_8cg4m"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xfife"]
 
@@ -79,6 +80,8 @@ autostart = true
 position = Vector2(245, 155)
 
 [node name="Music" parent="." instance=ExtResource("6_mitj6")]
+
+[node name="SFX" parent="." instance=ExtResource("7_8cg4m")]
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="Timers/BubbleGenerator" to="." method="_on_bubble_generator_timeout"]
