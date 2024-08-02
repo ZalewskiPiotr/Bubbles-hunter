@@ -13,6 +13,7 @@ var speed : float 					# Szybkość bańki
 
 # METODY WBUDOWANE
 func _ready():
+	print("bubble->_ready(): tworzę bańkę killer")
 	new_velocity_vector()
 	new_speed()
 	new_position()

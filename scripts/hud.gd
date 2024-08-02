@@ -16,6 +16,7 @@ func _ready():
 
 
 func add_point():
+	print("prawidłowy punkt")
 	points += 1
 	score_label.text = "SCORE: " + str(points)
 
